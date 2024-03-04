@@ -1,0 +1,20 @@
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 4s linear infinite;
+}
+:root {
+	--black: #252b31;
+	--white: #fff;
+	--green: #eb3838;
+	--gray-gray: #f9fafb;
+	--gray-gray-1: #c7d5e3;
+	--gray-gray-2: #c1c9d1;
+	--gray-gray-3: #767d83;
+	--gray-gray-4: #444a4f;
+	--red-main: #eb3838;
+}

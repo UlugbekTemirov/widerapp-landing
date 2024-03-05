@@ -32,6 +32,39 @@ body {
 }
 .icon-vector {
   background: url(./assets/icons/vector.svg);
+
   mask-image: url("./assets/icons/vector.svg");
   -webkit-mask-image: url("./assets/icons/vector.svg");
 }
+/* 
+.icon-chats {
+  background: url(./assets/icons/chatsIcon.svg);
+  mask-image: url("./assets/icons/chatsIcon.svg");
+  -webkit-mask-image: url("./assets/icons/chatsIcon.svg");
+}
+.icon-liked {
+  background: url(./assets/icons/likedIcon.svg);
+  mask-image: url("./assets/icons/likedIcon.svg");
+  -webkit-mask-image: url("./assets/icons/likedIcon.svg");
+}
+.icon-shared {
+  background: url(./assets/icons/sharedIcon.svg);
+  mask-image: url("./assets/icons/sharedIcon.svg");
+  -webkit-mask-image: url("./assets/icons/sharedIcon.svg");
+}
+.icon-global {
+  background: url(./assets/icons/globalIcon.svg);
+  mask-image: url("./assets/icons/globalIcon.svg");
+  -webkit-mask-image: url("./assets/icons/globalIcon.svg");
+}
+
+.icon-admin {
+  background: url(./assets/icons/adminIcon.svg);
+  mask-image: url("./assets/icons/adminIcon.svg");
+  -webkit-mask-image: url("./assets/icons/adminIcon.svg");
+}
+
+.icon-benefitTarget {
+  background: url(./assets/icons/benefitTargetIcon.svg);
+  mask-image: url("./assets/icons/benefitTargetIcon.svg");
+  -webkit-mask-image: url("./assets/icons/benefitTargetIcon.svg"); }*/

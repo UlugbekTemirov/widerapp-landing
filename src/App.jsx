@@ -7,6 +7,7 @@ import { StartNowButton } from "./components/Buttons";
 import Home from "./sections/Home";
 import Potential from "./sections/Potential";
 import Benefits from "./sections/Benefits";
+import HowIsWork from "./sections/HowIsWork";
 
 function App() {
   const [top, setTop] = useState(0);
@@ -37,7 +38,7 @@ function App() {
   return (
     <div className="bg-[#F4F7F9]">
       <Navbar />
-      {/* <AnimatePresence>
+      <AnimatePresence>
         {top > 400 && (
           <motion.div
             animate={{
@@ -57,11 +58,12 @@ function App() {
             <StartNowButton />
           </motion.div>
         )}
-      </AnimatePresence> */}
+      </AnimatePresence>
 
       <Home id="howWork" />
       <Potential id="potential" />
       <Benefits id="benefits" />
+      <HowIsWork id="howWork" />
 
       <Footer />
     </div>

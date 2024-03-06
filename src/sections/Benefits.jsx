@@ -55,7 +55,7 @@ const Benefits = ({ id }) => {
   return (
     <section
       id={id}
-      className=" rounded-t-[32px] bg-[#fff] relative z-20 xl:py-[60px] py-[30px] mt-[-30px]"
+      className=" rounded-[32px] bg-[#fff] relative z-20 xl:py-[60px] py-[30px] mt-[-30px]"
     >
       <Container className="max-w-[1200px] text-center">
         <h1 className="text-[#101828] lg:text-[38px] md:text-[28px] text-[34px]  font-bicub text-center">

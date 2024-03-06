@@ -31,7 +31,7 @@ const Navbar = () => {
     <>
       <Sidemenu links={links} open={open} onClose={() => setOpen(false)} />
 
-      <nav className="py-5 bg-transparent backdrop-blur-lg fixed z-30 w-full">
+      <nav className="py-5 bg-[white] fixed z-30 w-full">
         <Container center className="justify-between items-center">
           <div className="flex items-center  gap-5">
             <RxHamburgerMenu

@@ -23,7 +23,7 @@ const Home = ({ id }) => {
       className="xl:pt-[96px] pt-[100px] rounded-b-[32px] bg-[#fff] md:pb-[50px] pb-10 overflow-hidden relative z-20"
     >
       <Container className="max-w-[950px] text-center">
-        <div className="mt-[50px]">
+        <div className="mt-[20px]">
           <h1 className=" font-bicub text-[#252b31] md:text-[60px] text-[36px]">
             Boost Your Confidence In{" "}
             <span className="text-[#eb3838] uppercase font-bicub">spoken</span>{" "}

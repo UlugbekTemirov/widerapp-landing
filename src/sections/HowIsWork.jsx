@@ -8,8 +8,8 @@ import line from "../assets/images/line.png";
 
 const HowIsWork = ({ id }) => {
   return (
-    <section id={id} className=" rounded-[32px] bg-[#fff]">
-      <Container className="max-w-[1250px]  py-[60px]">
+    <section id={id} className="rounded-[32px] bg-[#fff]">
+      <Container className="max-w-[1250px] py-[30px] xl:py-[60px]">
         <div>
           <div className="flex flex-col items-center justify-between flex-wrap gap-5 xl:flex-row mb-[30px]">
             <h2 className="flex-1 text-[38px] font-bicub text-[#252b31]">
@@ -22,8 +22,12 @@ const HowIsWork = ({ id }) => {
             </p>
           </div>
           <div className="flex flex-wrap justify-center gap-x-[80px] gap-y-[35px] items-center xl:justify-between">
-            <div className="flex justify-between gap-[20px] max-w-[562px]">
-              <img src={boxImage1} alt="boxImage1" />
+            <div className="flex xl:flex-nowrap flex-wrap-sm-max justify-between xl-max:flex-col-reverse gap-[20px] max-w-[562px]">
+              <img
+                src={boxImage1}
+                alt="boxImage1"
+                className="w-[292px] mx-auto"
+              />
               <div className=" flex flex-col justify-center gap-[12px]">
                 <p className="text-[16px] font-semibold leading-[140%]  text-[#eb3838]">
                   1 - STEP
@@ -37,8 +41,12 @@ const HowIsWork = ({ id }) => {
                 </p>
               </div>
             </div>
-            <div className="flex justify-between gap-[20px] max-w-[562px]">
-              <img src={boxImage2} alt="boxImage2" />
+            <div className="flex xl:flex-nowrap flex-wrap-sm-max justify-between  xl-max:flex-col-reverse gap-[20px] max-w-[562px]">
+              <img
+                src={boxImage2}
+                alt="boxImage2"
+                className="w-[292px] mx-auto"
+              />
               <div className=" flex flex-col justify-center gap-[12px]">
                 <p className="text-[16px] font-semibold leading-[140%] text-[#eb3838]">
                   2 - STEP
@@ -55,7 +63,7 @@ const HowIsWork = ({ id }) => {
             <div className="ms-5 xl:block hidden">
               <img src={line} alt="" />
             </div>
-            <div className="flex justify-between gap-[20px] max-w-[562px]">
+            <div className="flex xl:flex-nowrap flex-wrap-sm-max justify-between   gap-[20px] max-w-[562px]">
               <div className=" flex flex-col justify-center gap-[12px]">
                 <p className="text-[16px] leading-[140%] font-semibold text-[#eb3838]">
                   3 - STEP
@@ -70,7 +78,7 @@ const HowIsWork = ({ id }) => {
               </div>
               <img src={boxImage3} alt="boxImage3" />
             </div>
-            <div className="flex justify-between gap-[20px] max-w-[562px]">
+            <div className="flex xl:flex-nowrap flex-wrap-sm-max  justify-between   gap-[20px] max-w-[562px]">
               <div className=" flex flex-col justify-center gap-[12px]">
                 <p className="text-[16px] leading-[140%] font-semibold text-[#eb3838]">
                   4 - STEP

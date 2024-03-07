@@ -18,6 +18,10 @@ export default {
       dropShadow: {
         custom: "drop-shadow(0px 0px 24px #000000)",
       },
+      screens: {
+        "sm-max": { max: "650px" },
+        "xl-max": { max: "1260px" },
+      },
     },
   },
   plugins: [],

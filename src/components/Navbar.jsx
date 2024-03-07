@@ -28,21 +28,24 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <>
+    <div>
       <Sidemenu links={links} open={open} onClose={() => setOpen(false)} />
 
       <nav className="py-5 bg-[white] fixed z-30 w-full">
-        <Container center className="justify-between items-center">
-          <div className="flex items-center  gap-5">
+        <Container
+          center
+          className=" max-w-[1220px] justify-between  md:flex items-center"
+        >
+          <div className="flex items-center justify-between flex-1 lg:flex-none gap-5">
             <RxHamburgerMenu
               onClick={() => setOpen(true)}
               className="md:hidden"
               size={28}
             />
-            <Logo />
+            <Logo  />
           </div>
 
-          <ul className="md:flex items-center gap-10 hidden">
+          <ul className="lg:flex items-center gap-10 hidden">
             {links.map(({ href, label, children }, index) => (
               <li
                 key={index}
@@ -60,7 +63,7 @@ const Navbar = () => {
           </div>
         </Container>
       </nav>
-    </>
+    </div>
   );
 };
 

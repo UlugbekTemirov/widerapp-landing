@@ -28,7 +28,13 @@ const Sidemenu = ({ onClose, links, open = false }) => {
           transition={{ duration: 0.5 }}
           className={`fixed left-0 top-0 w-[80%] flex justify-center h-screen bg-white shadow-lg rounded-r-2xl md:hidden p-5 z-50`}
         >
-          <div className="flex flex-col justify-evenly fixed top-0 h-screen">
+          <button
+            className="absolute text-[48px] top-5 right-5"
+            onClick={onClose}
+          >
+            x
+          </button>
+          <div className="flex flex-col justify-center gap-5 fixed top-0 h-screen">
             {links.map((link, index) => (
               <a
                 key={index}

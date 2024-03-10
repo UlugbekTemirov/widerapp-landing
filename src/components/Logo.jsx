@@ -1,10 +1,15 @@
 import React from "react";
 import logoPng from "../assets/logo.png";
 
-const Logo = () => {
+const Logo = ({ styles }) => {
   return (
     <a href="/">
-      <img src={logoPng} alt="logo" style={{ width: "200px" }} />
+      <img
+        src={logoPng}
+        alt="logo"
+        style={{ width: "200px" }}
+        className={styles}
+      />
     </a>
   );
 };

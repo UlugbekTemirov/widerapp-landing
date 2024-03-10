@@ -1,11 +1,10 @@
 import React from "react";
+import { RiArrowDropDownLine } from "react-icons/ri";
 import Container from "./Container";
-
 import { FaInstagram, FaTelegram, FaYoutube, FaTwitter } from "react-icons/fa";
+import Logo from "./Logo";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
   const socials = [
     {
       id: "instagram",
@@ -29,15 +28,57 @@ const Footer = () => {
     },
   ];
 
-  return (
-    <section id="footer" className="bg-[#F9FAFB] h-[120px] flex items-center">
-      <Container>
-        <div className="flex justify-between">
-          <h1 className="text-[#667085] text-[16px] font-normal">
-            {currentYear} &copy; WiderAI Inc.
-          </h1>
+  const links = [
+    {
+      href: "#howWork",
+      label: "How does it work?",
+    },
+    {
+      href: "#ourUsers",
+      label: "Our Users",
+    },
+    {
+      href: "#assesntements",
+      label: "Assesntements",
+    },
+    {
+      href: "#privacy",
+      label: "Privacy and Police",
+    },
+    {
+      href: "#contacts",
+      label: "Contacts",
+    },
+    {
+      href: "#pricing",
+      label: "Pricing",
+    },
+  ];
 
-          <div className="flex gap-5">
+  return (
+    <section
+      id="footer"
+      className="bg-[#F4F7F9] flex items-center lg:py-[60px] py-[30px]"
+    >
+      <Container className="max-w-[1220px] ">
+        <div className="grid grid-cols-1 lg:grid-cols-3 justify-center items-center  xl:justify-between gap-x-[20px] lg:gap-x-[72px] mb-[26px] gap-y-[10px]">
+          <div className="flex items-center justify-center ">
+            <Logo />
+          </div>
+          <ul className="flex flex-wrap justify-center items-center gap-x-[28px]">
+            {links.map(({ href, label, children }, index) => (
+              <li
+                key={index}
+                className="cursor-pointer text-[#444a4f] font-normal text-[16px] navlink"
+              >
+                <a className="flex items-center" href={href}>
+                  {label}
+                  {children ? <RiArrowDropDownLine size={25} /> : null}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <div className="flex  items-center justify-center gap-5">
             {socials.map((social) => {
               const Icon = social.icon;
               return (
@@ -46,14 +87,17 @@ const Footer = () => {
                   href={social.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-[#667085] hover:text-[#7F56D9] duration-200"
+                  className="text-[#667085] hover:text-[#7F56D9] duration-200 border-[#252b31] border rounded-full p-2"
                 >
-                  <Icon className="w-[24px] h-[24px]" />
+                  <Icon className="w-[24px] h-[24px] text-[#252b31]" />
                 </a>
               );
             })}
           </div>
         </div>
+        <p className="text-[14px] text-[#475467] leading-[140%] font-normal text-center">
+          Lorem ipsum.com Hamma huqular himoyalangan
+        </p>
       </Container>
     </section>
   );

@@ -2,10 +2,16 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import Home from "./sections/Home";
-
 import { AnimatePresence, motion } from "framer-motion";
 import { StartNowButton } from "./components/Buttons";
+import Home from "./sections/Home";
+import Potential from "./sections/Potential";
+import Benefits from "./sections/Benefits";
+import HowIsWork from "./sections/HowIsWork";
+import Assessment from "./sections/Assessment";
+import OurUsers from "./sections/OurUsers";
+import Prices from "./sections/Prices";
+import Questions from "./sections/Questions";
 
 function App() {
   const [top, setTop] = useState(0);
@@ -34,9 +40,9 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="bg-[#F4F7F9]">
       <Navbar />
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {top > 400 && (
           <motion.div
             animate={{
@@ -56,12 +62,19 @@ function App() {
             <StartNowButton />
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
 
       <Home id="howWork" />
+      <Potential id="potential" />
+      <Benefits id="benefits" />
+      <HowIsWork id="howWork" />
+      <Assessment id="assessment" />
+      <OurUsers id="ourUsers" />
+      <Prices id="prices" />
+      <Questions id="questions" />
 
       <Footer />
-    </>
+    </div>
   );
 }
 
